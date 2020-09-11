@@ -1,6 +1,6 @@
 import pymysql
 
-con = pymysql.connect(host='localhost', user='root', password='jj8575412', db='db_score')
+con = pymysql.connect(host='localhost', user='root', password='********', db='db_score')
 
 cur = con.cursor()
 
