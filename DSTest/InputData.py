@@ -7,7 +7,7 @@ from openpyxl import load_workbook
 df_from_excel = pd.read_excel('db_score.xlsx', sheet_name='Sheet1')
 data = [tuple(x) for x in df_from_excel.values]
 
-conn = pymysql.connect(host = 'localhost', user = 'root', password= 'jj8575412', db = 'db_score')
+conn = pymysql.connect(host = 'localhost', user = 'root', password= '********', db = 'db_score')
 curs = conn.cursor()
 
 sql = """insert into score(sno, attendance, homework, discussion, midterm, final, score, grade) 
